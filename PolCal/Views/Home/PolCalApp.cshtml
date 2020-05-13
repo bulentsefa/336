@@ -1,0 +1,41 @@
+﻿<h4 style="color:purple">
+    <b>ID:</b>    @ViewBag.Date <br />
+    <b>Name:</b>  @ViewBag.Name <br />
+    <b>Addon:</b> @ViewBag.Addon
+</h4>
+<hr />
+<h3><b>PolCal Policy Calculator</b></h3>
+ 
+<form action="formPolicy" method="post">
+    <table>
+        <tr>
+            <td style="color:purple">Start Date: </td>
+            <td><input type="date" name="txtDate" /></td>
+        </tr>
+          <tr>
+            <td style="color:purple">End Date: </td>
+            <td><input type="date" name="txtDate" /></td>
+        </tr>
+       
+        <tr>
+            <td style="color:purple">
+                Please select your policy type:
+            </td>
+            <td>
+                <select name="Policies">
+                 <option value="Traffic">Traffic Policy</option>
+                <option value="Car Insurance">Insuranc Policy</option>
+                <option value="Company Insurance Policy">Company Insurance Policy</option>
+                </select>
+            </td>
+        </tr>
+       
+        <tr>
+            <td style="color:purple">Policy Premium Amount </td>
+            <td><input type="number" name="PremiumAmount" /></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="submit" value="Submit Form" /></td>
+        </tr>
+    </table>
+</form>
